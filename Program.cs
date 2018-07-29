@@ -60,7 +60,7 @@ namespace RedMart_SpreadSheetCalculator
 
         private void InitializeSpreadSheetAndDimensions(string line)
         {
-            var firstLineValues = line.Split(" ");
+            var firstLineValues = line.Split(new[] {" "}, StringSplitOptions.None);
 
             if (firstLineValues.Length != 2)
                 throw new Exception("Invalid cell sizes !");
@@ -116,7 +116,7 @@ namespace RedMart_SpreadSheetCalculator
 
                 orderExecution.Add(currentCell);
 
-                var lineValues = currentCell.CellContent.Split(" ");
+                var lineValues = currentCell.CellContent.Split(new[] {" "}, StringSplitOptions.None);
                 var operands = new Stack<decimal>();
                 for (int i = 0; i < lineValues.Length; i++)
                 {

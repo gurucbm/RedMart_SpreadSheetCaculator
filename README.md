@@ -10,5 +10,5 @@ Project is in .NET core (C#)
 The code can be run online at - https://repl.it/repls/TurquoiseDaringInterfacestandard 
 
 Yet to be done -
-Unit tests
-Detailed documentation
+1. Unit tests and 
+2. Detailed documentation
